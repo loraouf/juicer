@@ -1,0 +1,23 @@
+//juicer solution cpp 
+#include<iostream>
+using namespace std;
+int main(){
+    long long n,b,d, t=0,sum=0;
+    cin>>n>>b>>d;
+    for(int i=0;i<n;i++){
+        long long x;
+        cin>>x;
+        if(x<=b){
+            sum+=x;
+        }
+        if(sum>d){
+             sum=0;
+            t++;
+           
+        }
+    }
+    cout<<t;
+    return 0;
+}
+
+//A accepted
